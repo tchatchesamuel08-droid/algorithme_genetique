@@ -1,8 +1,4 @@
 
-
-1. Rôle du document de conception
-Ce document de conception a pour objectif de définir l’organisation interne du projet et la manière dont les différents éléments du système interagissent entre eux.
-Il constitue une étape intermédiaire entre le cahier des charges et l’implémentation, permettant de structurer le travail avant toute phase de codage.
 La conception vise à :
 •	Clarifier les responsabilités de chaque composant,
 •	Assurer une architecture logicielle propre et modulaire,
@@ -18,13 +14,13 @@ Elle coordonne l’exécution de l’algorithme, la gestion du temps, des géné
 Elle permet à l’utilisateur d’interagir avec l’algorithme, de modifier les paramètres et d’observer les résultats en temps réel.
 Cette séparation garantit une bonne lisibilité du code et facilite les évolutions futures.
 3. Modélisation des entités principales
-3.1 Objet (Item)
+3.1 Objet 
 Un objet représente un élément pouvant être placé dans le sac à dos.
 Chaque objet est caractérisé par :
 •	Un poids,
 •	Une valeur.
 Les objets sont communs à toutes les solutions et constituent les données d’entrée du problème.
-3.2 Individu (Individual)
+3.2 Individu 
 Un individu représente une solution candidate au problème du sac à dos.
 Il est défini par :
 •	Un chromosome binaire, où chaque gène correspond à un objet,
@@ -33,14 +29,14 @@ Responsabilités principales :
 •	Représenter une combinaison d’objets,
 •	Calculer son propre fitness en fonction des contraintes du problème,
 •	Servir de base aux opérations génétiques (sélection, croisement, mutation).
-3.3 Population (Population)
+3.3 Population 
 La population est un ensemble d’individus représentant les solutions présentes à une génération donnée.
 Responsabilités principales :
 •	Stocker les individus,
 •	Permettre l’accès au meilleur individu,
 •	Servir de base à la génération suivante.
 La population évolue au fil des générations grâce à l’algorithme génétique.
-3.4 Algorithme Génétique (Genetic Algorithm)
+3.4 Algorithme Génétique
 L’algorithme génétique constitue le cœur logique du projet.
 Il est responsable de :
 •	L’initialisation de la population,
@@ -93,5 +89,3 @@ L’architecture choisie permet :
 8. Conclusion de la conception
 Cette phase de conception permet de poser des bases solides pour l’implémentation du projet.
 Elle assure une séparation claire des responsabilités, facilite le développement progressif et garantit la cohérence globale de l’application.
-
-
