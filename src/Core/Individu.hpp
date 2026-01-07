@@ -24,6 +24,9 @@ public:
     // Retourne le chromosome
     const std::vector<int>& getChromosome() const {
         return chromosome;
+        
+    }  std::vector<int>& getChromosome() {
+        return chromosome;
     }
 
     // Retourne la fitness de l'individu
